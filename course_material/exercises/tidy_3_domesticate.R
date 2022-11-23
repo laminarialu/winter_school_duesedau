@@ -11,7 +11,7 @@ library(tidyverse)
 # Data --------------------------------------------------------------------
 
 # SST data
-sst_NOAA <- read_csv("../data/sst_NOAA.csv")
+sst_NOAA <- read_csv("course_material/data/sst_NOAA.csv")
 
 
 # Example -----------------------------------------------------------------
@@ -34,11 +34,13 @@ sst_NOAA %>%
 
 # Find the maximum temperature and SD per year per site
 # Plot this as a bar plot with error bars
+# Inset a map of each site over each bar plot
 
 
 # Exercise 3 --------------------------------------------------------------
 
 # From scratch, re-write the full analysis for exercise 1 'The new age'
+# Inset maps for each at the end of each line on the Y axis
 
 
 # BONUS -------------------------------------------------------------------

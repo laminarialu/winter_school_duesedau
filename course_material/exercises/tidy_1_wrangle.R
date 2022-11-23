@@ -6,7 +6,6 @@
 # Libraries ---------------------------------------------------------------
 
 library(tidyverse)
-library(palmerpenguins)
 
 
 # Data --------------------------------------------------------------------
@@ -20,7 +19,13 @@ sst_NOAA <- read_csv("course_material/data/sst_NOAA.csv")
 
 # Example -----------------------------------------------------------------
 
+# The first few rows of an untidy dataframe
 head(OISST3)
+
+# Pivot wide by date
+  # NB: This is very untidy
+OISST1_wide <- OISST1 %>% 
+  pivot_wider(values_from = temp, names_from = t)
 
 
 # Exercise 1 --------------------------------------------------------------
@@ -42,6 +47,5 @@ head(OISST3)
 
 # Plot the temperatures of two time series against each other as a scatterplot
 # Meaning temperature from time series 1 are the X axis, and time series 2 on the Y axis
-# Hint: This requires filtering out one time series
-# Then pivoting the temperatures wide into columns
+# Hint: This requires pivoting the temperatures wide into columns
 
